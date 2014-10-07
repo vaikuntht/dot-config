@@ -9,6 +9,6 @@
 [alias]
 	st = status
         pom = push origin master
-        resetorigin = "!f() { git fetch origin && git reset --hard origin/${1} && git clean -f -d; }; f"
+        resetorigin = "!f() { git fetch origin && git reset --hard @{u} && git clean -f -d; }; f"
         logfull = log --graph --decorate
         rebasemaster = !git fetch origin master && git rebase -i origin/master
