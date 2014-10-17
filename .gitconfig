@@ -12,3 +12,5 @@
         resetorigin = "!f() { git fetch origin && git reset --hard @{u} && git clean -f -d; }; f"
         logfull = log --graph --decorate
         rebasemaster = !git fetch origin master && git rebase -i origin/master
+[push]
+	default = simple
