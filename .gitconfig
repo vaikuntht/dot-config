@@ -8,7 +8,11 @@
 	status = auto
 [alias]
 	st = status
-        pom = push origin master
-        resetorigin = "!f() { git fetch origin && git reset --hard @{u} && git clean -f -d; }; f"
-        logfull = log --graph --decorate
-        rebasemaster = !git fetch origin master && git rebase -i origin/master
+        psom = push origin master
+        plom = pull origin master
+        resetorigin = "!f() { git fetch origin && git reset --hard origin/${1} && git clean -f -d; }; f"
+[push]
+	default = simple
+[core]
+	editor = vim
+	excludesfile = /home/qserv/.gitignore
