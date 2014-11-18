@@ -10,7 +10,7 @@ DIR=$(cd "$(dirname "$0")"; pwd -P)
 
 case "$BYOBU_DISTRO" in
 	"Ubuntu")
-		su -c "patch --backup /usr/share/byobu/profiles/bashrc < ${DIR}/Ubuntu14.04/usr/share/byobu/profiles/bashrc.patch"
+		sudo patch --backup /usr/share/byobu/profiles/bashrc < ${DIR}/Ubuntu14.04/usr/share/byobu/profiles/bashrc.patch
 	;;
 	*)
 		# Use nice colors (green / red / blue)

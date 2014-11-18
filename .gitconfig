@@ -1,6 +1,6 @@
 [user]
-        name = Fabrice Jammes
-        email = fabrice.jammes@in2p3.fr
+	email = vaikunth@tamu.edu
+	name = Vaikunth Thukral
 [color]
         branch = auto
         diff = auto
@@ -14,5 +14,5 @@
 [push]
         default = simple
 [core]
-        editor = vim
+        editor = emacs 
 	excludesfile = /home/qserv/.gitignore
